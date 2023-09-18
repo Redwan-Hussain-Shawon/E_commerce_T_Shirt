@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <!-- ***Bootstrap Css Link***  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ***Owl Carousel JS Link***  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
+
+                     <!-- *Aos Cdn CSS File  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ***Stylesheet Link*** -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- ***Font Awesome Link*** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ***Google Font Link*** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-container" data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <!-- ^Home Section Start-->
+
+        <div id="home">
+            <nav class="navbar fixed-top navbar-expand-lg" id="nav">
+                <header class="container-fluid container-xl">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbareOf"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbareOf"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body justify-content-end align-items-center">
+                            <ul class="nav nav-pills gap-3">
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block color" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="#services">Services</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="#review">Review</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex align-items-center form-serrch mx-3" role="search">
+                                <input class="form-control me-2 " placeholder="Search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                </header>
+            </nav>
+
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselId " data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselId " data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselId " data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/slider-1.png" class="d-block w-100" alt="Slider 1">
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/slider-2.png" class="d-block w-100" alt="Slider 2">
+                        <!-- <div class="carousel-caption d-none d-md-block ">
+                            <h5 class="text-primary">First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/slider-3.png" class="d-block w-100" alt="Slider 3">
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
+        <!-- ^Home Section End-->
+
+        <!-- ^ Trending Slider Section Start-->
+
+        <div class="container-lg trending" data-aos="zoom-in-up">
+            <h2>Trending Now</h2>
+            <div class="main_t-card">
+                <div class="d-flex gap-3 overflow-hidden carousel owl-carousel">
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-1.jpg" alt="">
+                    </div>
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-2.jpg" alt="">
+                    </div>
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-3.jpg" alt="">
+                    </div>
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-4.jpg" alt="">
+                    </div>
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-5.jpg" alt="">
+                    </div>
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-6.png" alt="">
+                    </div>
+                    <div class="t-card">
+                        <img src="assets/images/t-shirt-7.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ^Trending Slider Section End-->
+
+
+        <!-- ^Popular Categories Card Section Start-->
+
+        <div class="container" id="services" data-aos="fade-right">
+            <h2>Popular Categories</h2>
+            <div class="mian-card-warp">
+                <div class="popular-card-row justify-content-center">
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-2.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-5.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-2.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-9.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-10.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-7.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-7.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-card-img">
+                            <img src="assets/images/t-shirt-3.jpg" alt="">
+                            <div class="icons d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <h3>Printed Casual T-Shirt For Man T-shirt For Men</h3>
+                        <p>৳ 350</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ^Popular Categories Card Section End-->
+
+        <!-- ^About Section Start-->
+
+        <div id="about"  data-aos="flip-right">
+            <div class="container-lg about">
+                <h4>About Us</h4>
+                <h3>WHY CHOOSE US ?</h2>
+                    <div class="row align-items-center gy-5">
+                        <div class="col-lg-5 col-md-12 d-flex align-itmes-end justify-content-center py-5">
+                            <img src="assets/images/t-shirt-9.jpg" alt="">
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                            <h2>Best T-Shirt In The Country </h2>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words.</p>
+                            <div class="button-about-main d-sm-flex gy-5 ">
+                                <div class="about-btn d-flex align-items-center">
+                                    <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                    <button>Easy Payment</button>
+                                </div>
+                                <div class="about-btn d-flex align-items-center d-sm-block">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <button>24 Hour Service</button>
+                                </div>
+                            </div>
+                                <div class="learn-more-btn">
+                                    <button>Learn More</button>
+                                </div>
+                           
+                        </div>
+                    </div>
+            </div>
+        </div>
+                                          <!-- ^About Section End-->
+                                         <!-- ^Review Section Start  -->
+<section id="review" data-aos="fade-up-right">
+    <div class="container">
+        <h3>Customers's Review</h3>   
+        <h2>What They Say</h2> 
+        <div class="carousel owl-carousel">
+            <div class="review_card">
+        <div class="header_section d-flex justify-content-between">
+            <div class="d-flex gap-4">
+                <img src="assets/images/t1.jpg" alt="" class="rounded-circle">
+                <div>
+                    <h4>Oliver</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempora consequuntur omnis et velit? Vero fuga amet ut eum nulla? Amet eum laborum illum necessitatibus ducimus commodi natus sunt eius</p>
+        </div>
+
+        <div class="review_card">
+            <div class="header_section d-flex justify-content-between">
+                <div class="d-flex gap-4">
+                    <img src="assets/images/t2.jpg" alt="" class="rounded-circle">
+                    <div>
+                        <h4>Oliver</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempora consequuntur omnis et velit? Vero fuga amet ut eum nulla? Amet eum laborum illum necessitatibus ducimus commodi natus sunt</p>
+            </div>
+
+            <div class="review_card">
+                <div class="header_section d-flex justify-content-between">
+                    <div class="d-flex gap-4">
+                        <img src="assets/images/t1.jpg" alt="" class="rounded-circle">
+                        <div>
+                            <h4>Oliver</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempora consequuntur omnis et velit? Vero fuga amet ut eum nulla? Amet eum laborum illum necessitatibus ducimus commodi natus </p>
+                </div>
+
+                <div class="review_card">
+                    <div class="header_section d-flex justify-content-between">
+                        <div class="d-flex gap-4">
+                            <img src="assets/images/t1.jpg" alt="" class="rounded-circle">
+                            <div>
+                                <h4>Oliver</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempora consequuntur omnis et velit? Vero fuga amet ut eum nulla? Amet eum laborum illum necessitatibus ducimus </p>
+                    </div>
+                    <div class="review_card">
+                        <div class="header_section d-flex justify-content-between">
+                            <div class="d-flex gap-4">
+                                <img src="assets/images/t2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Oliver</h4>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempora consequuntur omnis et velit? Vero fuga amet ut eum nulla? Amet eum laborum illum necessitatibus ducimus commodi natus </p>
+                        </div>
+    </div>
+    </div>
+</section>
+
+                                         <!-- ^Review Section End  -->
+
+
+
+                                          <!-- ^Contact Section Start-->
+    <div id="contact"> 
+        <h2>Order Now</h2>
+        <form>
+           <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="enter your name" id="name" class="form-control mb-3">
+           </div>
+          <div class="form-group">
+            <label for="order">Your Order</label>
+            <input type="text" placeholder="enter your order" id="order" class="form-control mb-3">
+           </div> 
+           <div class="form-group">
+            <label for="how_much">How Much</label>
+            <input type="text" placeholder="how many order" id="how_much" class="form-control mb-3">
+           </div> 
+           <div class="form-group">
+            <label for="address">Your Address</label>
+            <!-- <input type="text" placeholder="enter your address" id="address" class="form-control msg">
+             -->
+             <textarea id="address" placeholder="enter your address" class="form-control" style="height: 140px;"></textarea>
+           </div> 
+           <button>Submit</button>
+        </form>
+    </div>
+
+                                          <!-- ^Contact Section End-->
+
+
+                                          <!-- ^Footer Section Start-->
+
+<footer>
+    <div class="container">
+    <div class="row gy-3">
+        <div class="col-lg-3 col-sm-6 ">
+            <ul>
+                <li>Contact Info</li>
+                <li>01739228823</li>
+                <li>01792986378</li>
+                <li>01783908373</li>
+                <li>hel@322.gmail.com</li>
+                <li>hejfd@22392.gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <ul>
+                <li>Locations</li>
+                <li>Bangladesh </li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <ul>
+                <li>Quick Links</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Review</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+           <h3 class="follow_us text-start">Follow Us</h3>
+           <div class="icons d-flex gap-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+           </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+                                          <!-- ^Footer Section End-->
+    </div>
+
+
+
+    <!-- ***Bootstrap JS Link***  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- ***Jquery Link*** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ***Owl Carousel Cdn***  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+
+                 <!-- **Aos Cdn JS File  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ***JS File Link*** -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary:#27ae60;
+    --Secondary:#192a56;
+    --bg:#B5e2fa;
+    --light:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1)
+}
+
+button,span,input:focus{
+    box-shadow: none !important;
+}
+                                            /* Home Section Start */
+.navbar{
+    padding: 10px 0;
+    box-shadow:var(--box-shadow);
+    background-color: #fff;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--Secondary);
+}
+
+.nav-item a:hover{
+    background-color: var(--primary);
+    color: #fff !important;
+    border-radius: 3px;
+}
+.nav-item a{
+    color: var(--light);
+    padding: 6px 13px;
+    transition: ease-in 0.2s;
+}
+
+.nav-pills .nav-link.active{
+    background-color: var(--primary);
+    color: #fff;
+}
+.navbar-toggler{
+    background-color:#eee;
+    border-radius: 50%;
+    border: none;
+    padding: 12px 14px;
+    transition: 0.3s;
+}
+.navbar-toggler:hover{
+    background-color: var(--primary);
+}
+.navbar-toggler:hover i{
+    color: #fff;
+}
+.navbar-toggler i{
+    color: var(--Secondary);
+    font-size: 24px;
+    transition: ease-in 0.4s;
+}
+.form-serrch{
+    background-color: #eee;
+    border-radius: 20px;
+    height: 40px;
+    max-width: 350px;
+    display: flex;
+    padding-left: 8px;
+
+}
+.form-serrch input{
+    background-color: transparent;
+    border: none;
+}
+.form-serrch input:focus{
+    background-color: transparent;
+}
+.form-serrch i{
+    background-color: var(--Secondary);
+    color: #fff;
+    border-radius: 50%;
+    padding: 12px 13px;
+    cursor: pointer;
+}
+.add-to-cart i{
+    background-color: #eee;
+    color: var(--Secondary);
+    border-radius: 50%;
+    padding: 12px 10px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.add-to-cart i:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+#carouselId{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 60px;
+}
+.carousel-item img{
+    height: 800px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px ;
+    height: 10px;
+    background-color:#fff;
+    border-radius: 50%;
+    border: none;
+    opacity: 1;
+}
+.carousel-indicators [data-bs-target].active{
+    background-color: var(--primary);
+}
+.carousel-control-prev{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+}
+.carousel-control-next{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+}
+.carousel-control-prev,
+.carousel-control-next i{
+    color: var(--primary);
+    font-size: 25px;
+  
+}
+.carousel-control-prev{
+    color: var(--primary) !important;
+}
+
+                                 /* Home Section End */
+
+
+                    /* Trending Slider Section Start */
+  .trending.container-lg{
+    width: 53%;
+  }                               
+.trending{
+    margin: 100px auto 30px;
+}
+.trending h2{
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+.main_t-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 6px 20px;
+    border-radius:18px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.carousel.owl-carousel{
+    margin: 0 auto;
+    margin-left: 0 !important;
+    margin-right: 0px;
+    padding: 20px 15px 20px 25px !important;
+    position: relative;
+}
+.t-card{
+    width: 190px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+}
+.t-card img{
+    width: 95%;
+    border-radius: 8px;
+}
+.owl-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .fa-arrow-left::before{
+    position: absolute;
+    left: 20px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #222;
+    box-shadow: rgba(100, 100, 111, 0.2) 1px 1px 4px;
+    padding:8px 9px;
+    border-radius: 50%;
+}
+.fa-arrow-right::before{
+    position: absolute;
+    right:20px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #222;
+    box-shadow: rgba(100, 100, 111, 0.2) 1px 1px 4px;
+    padding:8px 9px;
+    border-radius: 50%;
+} 
+
+                                         /* Trending Slider Section End */
+
+                                        /* Popular Categories Card Section Start */
+
+#services h2{
+    color: var(--Secondary);
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+#services .mian-card-warp{
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.20);
+    margin-top: 40px;
+    position: relative;
+    min-width: 288px;
+}
+#services .mian-card-warp::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 70px;
+    background-color: var(--primary);
+    border-radius: 0 20px 20px 0;
+    left: 0;
+    top: 60px;
+}
+#services .mian-card-warp::after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 70px;
+    background-color: var(--primary);
+    border-radius: 20px 0px 0px 20px;
+    right: 0;
+    bottom: 60px;
+}
+#services .mian-card-warp .popular-card-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+#services .mian-card-warp .popular-card{
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.30);
+    border-radius: 8px;
+    max-width: 300px;
+}
+.row{
+    --bs-gutter-x:1.5rem !important;
+}
+#services .mian-card-warp img{
+    width: 100%;
+    border-radius: 8px;
+}
+.popular-card-img{
+    position: relative;
+    cursor: pointer;
+}
+.popular-card-img:hover .icons i{
+    scale: 1;
+}
+.popular-card-img .icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.popular-card-img .icons i{
+    background-color:#fff;
+    color: #000;
+    padding:10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    scale: 0;
+}
+.popular-card-img .icons i:hover{
+    background-color: var(--Secondary);
+    color: #fff;
+}
+
+.popular-card h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 3px 13px;
+    color: #222;
+    text-align: start;
+}
+.popular-card p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--light);
+    margin: 5px 13px;
+}
+.popular-card button{
+    display: block;
+    margin: 10px auto 20px;
+    background-color: var(--Secondary);
+    font-size: 15px;
+    padding: 8px 25px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+.popular-card button:hover{
+    background-color: var(--primary);
+}
+
+                                        /* Popular Categories Card Section End */
+
+                                                  /* About Section Start */
+#about{
+    margin: 100px 0;
+    width: 100%;
+    overflow: hidden;
+} 
+#about h4,h3{
+    text-align: center;
+    font-weight: 500;
+    color: var(--primary);
+}  
+#about h3{
+    color: var(--Secondary);
+    font-weight: 600;
+    margin-bottom: 40px;
+}   
+#about .row h2{
+    font-weight:700;
+    color: var(--Secondary);
+    font-size: 35px;
+}                   
+#about .row p{
+    color: var(--light);
+    font-size: 14px;
+    font-weight: 300;
+    width: 70%;
+    margin: 10px 0;
+    line-height: 24px;
+}  
+#about .row img{
+    width: 80%;
+    align-items: start;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 350px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#about .row img:hover{
+    transform: rotate(-8deg) scale(1.2);
+}
+#about .about-btn{
+    background-color: #D9D9D9;
+    border: 2px solid #C2C2C2;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+#about .about-btn button{
+    background-color:transparent;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+#about .about-btn i{
+    color: var(--primary);
+    font-size: 23px;
+}
+#about .learn-more-btn button{
+    background-color: var(--Secondary);
+    font-size: 15px;
+    padding: 8px 25px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+#about .learn-more-btn button:hover{
+    background-color: var(--primary);
+}
+            
+                                /* About Section End */
+
+
+                                /* Review Section Start */
+#review .container .review_card{
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    position: relative;
+}
+#review .container h2{
+    text-align: center;
+    color: var(--Secondary);
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#review .container .review_card img{
+    width: 80px;
+    height: auto;
+}
+#review .container .review_card h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--Secondary);
+}
+#review .container .review_card i{
+    font-size: 13px;
+    color: var(--primary);
+
+}
+i.fa-quote-right{
+    position: absolute;
+    font-size: 50px !important;
+    right: 20px;
+    top: 20px;
+    color: #c9c9c9 !important;
+}
+#review .review_card p{
+    font-size: 14px;
+    color: var(--light);
+    margin-top: 10px;
+    line-height: 24px;
+}
+#review .owl-carousel .owl-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+#review .owl-carousel .owl-dots button{
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#review .owl-carousel .owl-dots button.active{
+    background-color: var(--primary);
+}
+
+                                /* Review Section End */
+
+                                /* Contact Section Start */
+
+#contact{
+    width: 100%;
+    background-color: #eeee;
+    padding: 50px 20px;
+}
+#contact h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--primary);
+}
+#contact form{
+    max-width: 500px;
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.25);
+    margin: 40px auto 0;
+}
+#contact form input{
+    background-color: #D9D9D9;
+    color: var(--light);
+    padding: 10px 15px;
+    font-size: 15px;
+}
+#contact form input:focus{
+    border: 1px solid transparent;
+}
+#contact form input::placeholder{
+    color: var(--light);
+    font-weight: 400;
+    font-size: 15px;
+}
+#contact form label{
+    color: var(--light);
+    margin-bottom:3px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+#contact form textarea{
+   background-color: #D9D9D9;
+   padding: 10px 15px;
+   resize: none;
+   font-size: 15px;
+   outline: none;
+   border: none;
+}
+#contact form textarea::placeholder{
+    color: var(--light);
+    font-size: 15px;
+}
+#contact form textarea:focus{
+    box-shadow: none;
+    border: none;
+}
+#contact form button{
+    background-color: var(--Secondary);
+    font-size: 15px;
+    padding: 8px 25px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+
+                                /* Contact Section End */
+
+                                /* Footer Section Start */
+footer{
+    padding: 60px 0 50px;
+}
+footer .col-lg-3:nth-child(4){
+    padding-left: 40px;
+}
+
+footer ul {
+    list-style: none;
+}
+footer ul li:nth-child(1),.follow_us{
+    font-size: 22px;
+    color: var(--Secondary);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer ul li{
+    font-size: 14px;
+    color: var(--light);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+footer ul li:hover{
+    text-decoration: underline;
+}
+footer ul li:nth-child(1):hover{
+    text-decoration: none;
+}
+
+footer .icons i{
+    font-size: 22px;
+    color: var(--light);
+    cursor: pointer;
+    transition: 0.3s;
+}
+footer .icons i:hover{
+    transform: translateY(5px);
+}
+
+                                /* Footer Section End */
+
+
+@media (max-width:991px) {
+
+             /* Home Section Start */
+
+    .nav-pills{
+        display: flex;
+        flex-direction: column;
+    }
+    .offcanvas{
+        width: 100% !important;
+    }
+    .offcanvas-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    .nav-item a{
+        margin-bottom: 20px;
+    }
+
+                      /* Home Section End */
+
+  .trending.container-lg{
+    width: 90% ;
+ } 
+ #about .col-lg-7.col-md-12{
+    margin-left: 20px;
+ }
+}
+@media (max-width:600px) {
+
+               /* Home Section Start */
+  .carousel-item img{
+    height: 300px;
+	width:100%;
+}
+.carousel-control-prev{
+	width: 30px;
+    height:30px;
+    left: 20px;
+}
+.carousel-control-next{
+    right: 20px;
+    width: 30px;
+    height:30px;
+}
+.carousel-control-prev,
+.carousel-control-next i{
+    color: var(--primary);
+    font-size: 16px;
+  
+}
+
+             /* Home Section End */
+
+
+}
+@media (max-width:358px) {
+    #review .container h2,#about h2{
+        font-size: 30px !important;
+        font-weight: 600;
+    }
+    #review .container h3{
+        font-size: 24px;
+    }
+    #review .container .review_card img{
+        width: 60px;
+    }
+    #review .container .review_card h4{
+        font-size: 18px;
+    }
+    #review .container .review_card i{
+        font-size: 11px;
+    }
+    i.fa-quote-right{
+        font-size: 35px !important;
+        right: 10px;
+    }
+    #review .review_card p{
+        font-size: 12px;
+    }
+}
