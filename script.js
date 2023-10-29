@@ -76,7 +76,7 @@ $('#review .owl-carousel').owlCarousel({
     })
 
     AOS.init({
-      duration:1500,
-      delay:200,
+      duration:1000,
+      delay:400,
       easing:'linear',
     })
